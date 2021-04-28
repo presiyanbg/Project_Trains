@@ -12,9 +12,6 @@ class Pager
                     case "blog":
                         $controller = new BlogController();
                         break;
-                    case "movies":
-                        $controller = new MoviesController();
-                        break;
                     case "tickets":
                         $controller = new TicketsController();
                         break;

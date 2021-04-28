@@ -14,7 +14,6 @@
             <a href="<?php echo APPLICATION_PATH?>index.php"><h1>Project_Trains</h1></a>
         </section>
         <li><a href="<?php echo APPLICATION_PATH?>index.php?controller=blog&action=listAll">Blog</a></li>
-        <li><a href="<?php echo APPLICATION_PATH?>index.php?controller=movies&action=listAll">Movies</a></li>
         <li><a href="<?php echo APPLICATION_PATH?>index.php?controller=tickets&action=listAll">Buy A Ticked</a></li>
         <li><a href="<?php echo APPLICATION_PATH?>index.php?controller=stations&action=listAll">Stations</a></li>
         <?php

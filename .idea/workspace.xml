@@ -23,15 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c68595a-cc6e-4dba-9096-e357764ce809" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/StationsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/TicketsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repositories/StationsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repositories/TicketRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/html/routeCreate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/html/routeList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/html/stationCreate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/html/stationList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/tickets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Pager.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Pager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/MovieModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/MoviesRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/html/movieCreate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/html/movieList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/html/movieUpdate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/html/movieView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/movies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +94,7 @@
       <workItem from="1619296736971" duration="6117000" />
       <workItem from="1619376592829" duration="10214000" />
       <workItem from="1619556529686" duration="12827000" />
+      <workItem from="1619591380232" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="show basic php">
       <created>1612808707239</created>
