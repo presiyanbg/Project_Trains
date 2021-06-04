@@ -16,6 +16,6 @@ class TicketsController extends BaseController
     public function create() {
          $this->ticketModel->create($_POST);
 
-        header("Location: index.php?controller=tickets&action=listAll");
+        header("Location: index.php?controller=stations&action=listAll");
     }
 }

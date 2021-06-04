@@ -18,14 +18,34 @@ class StationsModel extends BaseModel
         return $this->stationsRepository->createRoute($data);
     }
 
+    public function createComment($data) {
+        return $this->stationsRepository->createComment($data);
+    }
+
     public function view($id)
     {
         // TODO: Implement view() method.
     }
 
+    public function viewStation($id) {
+        return $this->stationsRepository->getStation($id);
+    }
+
+    public function viewStationComments($id) {
+        return $this->stationsRepository->getStationComments($id);
+    }
+
+    public function viewRoute($id) {
+        return $this->stationsRepository->getRoute($id);
+    }
+
     public function listAll()
     {
         return $this->stationsRepository->getAll();
+    }
+
+    public function searchStation($data) {
+        return $this->stationsRepository->searchStation($data);
     }
 
     public function listAllRoutes() {
@@ -34,7 +54,12 @@ class StationsModel extends BaseModel
 
     public function update($data)
     {
-        // TODO: Implement update() method.
+        $this->stationsRepository->updateStation($data);
+    }
+
+    public function updateRoute($data)
+    {
+        $this->stationsRepository->updateRoute($data);
     }
 
     public function delete($id)

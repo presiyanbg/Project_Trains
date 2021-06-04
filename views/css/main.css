@@ -1,0 +1,700 @@
+/* ------------------------------------------------------------ *\
+	Reset
+\* ------------------------------------------------------------ */
+
+* { 
+	padding: 0; 
+	margin: 0; 
+	outline: 0; 
+	box-sizing: border-box; 
+}
+
+*:before,
+*:after { box-sizing: inherit; }
+
+
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	background-color: #fff;
+	box-shadow: inset 0px 10px 50px #000; 
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 40px;
+	line-height: 1.3em;
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 36px;
+	line-height: 1em;
+}
+
+h3 {
+	font-size: 32px;
+	line-height: 1.3em;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 1.5em;
+	font-weight: 300;
+}
+
+h5 {
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+h6 {
+	font-size: 10px;
+	line-height: 1.5em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input {
+	font-family: inherit;
+}
+
+select {
+	letter-spacing: inherit;
+	font-weight: inherit;
+	appearance: none;
+	background-color: #fff;
+	color: inherit;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	text-transform: uppercase;
+	cursor: inherit;
+	line-height: inherit;
+	outline: none; 
+}
+
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell {
+	width: 1200px;	
+	margin: auto;
+}
+
+/* ------------------------------------------------------------ *\
+	Top
+\* ------------------------------------------------------------ */
+
+.top {
+	text-align: right;
+	font-size: 10px;
+	color: #909090;
+	width: 100%;
+	background-color: #1a1a1a;
+}
+
+.top li {
+	display: inline-block;
+}
+
+.top li + li {
+	margin-left: 30px;
+}
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+	position: relative;
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+}
+
+.header__background {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}
+
+.header__background img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+}
+
+.header__body {
+	padding-top: 400px;
+}
+
+.header__navigation {
+	width: 100%;
+	display: inline-block;
+	padding: 30px;
+	box-shadow: inset 0px 0px 150px #000;
+	margin-bottom: -5px;
+}
+
+.header__logo {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	padding-left: 30px;
+}
+
+.header__logo a {
+	text-shadow: 0px 0px 10px #000;
+}
+
+.header__links {
+	padding-right: 30px;
+	float: right;
+	text-align: center;
+}
+
+.header__links li {
+	display: inline-block;
+	font-size: 15px;
+}
+
+.header__links li + li {
+	margin-left: 30px;
+}
+
+.header a:hover {
+	color: #ffa200;
+}
+
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section {
+	width: 100%;
+	background-color: #fff;
+	display: inline-block;
+	box-shadow: 0 0 300px #000;
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+	color: #000;
+	border-width: 1px;
+	border-right: double;
+	border-left: double;
+	border-color: #ba8f00;
+}
+
+.section__title {
+	margin-bottom: 50px;
+}
+
+.section__content {
+	border-radius: 30px;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+
+.section__image {
+	margin-bottom: 30px;
+}
+
+.section__image img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+}
+
+.section__special-text {
+	width: 750px;
+	margin: auto;
+	line-height: 2em;
+	font-style: italic;
+	padding: 50px;
+	border-width: 4px;
+	border-color: #ba8f00;
+	border-style: double;
+	box-shadow: 0 0 30px #b1b1b1;
+}
+
+
+/* ------------------------------------------------------------ *\
+	Comments
+\* ------------------------------------------------------------ */
+
+.station__comments--new input {
+	background-color: #f2f2f2;
+	padding: 35px;
+	width: 74%;
+	border: 1px solid #c4c4c4;
+	border-radius: 20px;
+	color: #000;
+	font-size: 24px;
+	height: 75px;
+	margin-right: 10px;
+}
+
+.station__comments--new {
+	margin-bottom: 30px;
+}
+
+.station__comment--box {
+	width: 100%;
+	border: 1px solid #c4c4c4;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.comment__text {
+	text-align: left;
+	padding: 10px 0 0 20px;
+}
+
+.comment__user, .comment__date {
+	float: right;
+	margin: 0 20px 10px 0;
+	font-size: 12px;
+	color: #b8b8b8;
+}
+
+
+/* ------------------------------------------------------------ *\
+	Basic Form
+\* ------------------------------------------------------------ */
+
+.basic__form {
+	max-width: 500px;
+	margin: auto;
+}
+
+.basic__form--title {
+	margin-bottom: 30px;
+}
+
+.basic__form--action {
+	margin-bottom: 30px;
+}
+
+.basic__form--action label {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.basic__form--action input, select {
+	width: 100%;
+	text-align: center;
+	min-height: 40px;
+	line-height: 2em;
+	font-size: 20px;
+	border: 1px solid #b8b8b8;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+.basic__form--action a {
+	color: #575757;
+}
+
+.password__alert {
+	display: inline-block;
+	color: #cc0000;
+	margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------ *\
+	Basic Search
+\* ------------------------------------------------------------ */
+
+.basic__form--search {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+
+.basic__form--search input {
+	width: 90%;
+	text-align: center;
+	min-height: 40px;
+	line-height: 2em;
+	font-size: 20px;
+	border: 1px solid #b8b8b8;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+
+/* ------------------------------------------------------------ *\
+	Routes
+\* ------------------------------------------------------------ */
+
+.routes__list {
+	width: 500px;
+	margin: auto;
+	border: 1px solid #b1b1b1;
+	margin-bottom: 30px;
+	border-radius: 50px;
+	padding: 20px;
+}
+
+.routes__id {
+	margin-bottom: 10px;
+}
+
+
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form {
+	width: 500px;
+	border: 1px solid #b1b1b1;
+	border-radius: 30px;
+	box-shadow: 0 0 30px #b1b1b1;
+	padding: 30px;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.form__body {
+	margin-bottom: 30px;
+}
+
+.form__row {
+	background-color: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 30px;
+	height: 30px;
+	border: 1px solid #909090;
+	border-radius: 5px;
+}
+
+.form__col {
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+
+.form__col select, input, span {
+	padding: 0 10px;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+	line-height: 1.2em;
+	min-height: 30px;
+	max-height: 30px;
+}
+
+.form__col select, input:hover {
+	cursor: pointer;
+}
+
+
+.form__option {
+	background-color: #b3b3b3;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.form_actions {
+	width: 100%;
+}
+
+/* ------------------------------------------------------------ *\
+	Stations
+\* ------------------------------------------------------------ */
+
+.stations__boxes {
+	display: flex;
+	flex-flow: wrap ;
+	margin-bottom: 100px;
+	max-width: 75%;
+	margin: auto;
+}
+
+.station__box {
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid #b1b1b1;
+	border-radius: 30px;
+	box-shadow: 0 0 30px #b1b1b1;
+}
+
+.station__box:hover {
+	cursor: pointer;
+	box-shadow: 0 0 30px #909090;
+}
+
+.box--big {
+	padding: 30px;
+	min-width: 100%;
+	max-height: 600px;
+	margin-bottom: 30px;
+}
+
+.box--small {
+	border-radius: 30px;
+	padding: 15px 20px;
+	width: 31%;
+	margin: auto auto 30px auto;
+	
+}
+
+.station__box__title {
+	margin-bottom: 30px;
+}
+
+.station__box__image img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.box--big .station__box__image img {
+	height: 400px;
+	max-height: 400px;
+}
+
+.box--small .station__box__title h3{
+	font-size: 20px;
+}
+
+.box--small .station__box__image img {
+	height: 150px;
+	max-height: 150px;
+}
+
+
+/* ------------------------------------------------------------ *\
+	User
+\* ------------------------------------------------------------ */
+
+.user__comments {
+	margin-bottom: 50px;
+}
+
+.user__comments--title {
+	margin-bottom: 10px;
+}
+
+
+.user__tickets {
+	margin-bottom: 50px;
+}
+
+.user__tickets--title {
+	margin-bottom: 10px;
+}
+
+.user__options {
+	margin-bottom: 30px;
+}
+
+.user__options ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.user__options li {
+	display: inline-block;
+}
+
+.user__table table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.user__table th, td, tr {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.user__table th {
+	font-size: 20px;
+	
+}
+
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+	display: inline-block;
+	z-index: 1;
+	width: 100%;
+	font-size: 10px;
+}
+
+.footer__body {
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	background-color: #1a1a1a;
+}
+
+.footer__links li {
+	display: inline-block;
+}
+
+
+.footer__links li + li{
+	margin-left: 30px;
+}
+
+/* ------------------------------------------------------------ *\
+	Background Texture Image
+\* ------------------------------------------------------------ */
+
+.background__image {
+	position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+	z-index:-2;
+}
+
+.background__image img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+
+/* ------------------------------------------------------------ *\
+	Buttons
+\* ------------------------------------------------------------ */
+
+.button {
+	background: transparent;
+	border: none;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+}
+
+.button__link__red {
+	color: #f54242;
+}
+
+.button__link__red:hover {
+	color: #ffa200;
+}
+
+.button__red {
+	text-transform: uppercase;
+	border-radius: 10px;
+	width: 100%;
+	background-color: #f54242;
+	color: #fff;
+	border: 1px solid #f54242;
+	min-height: 30px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.button__red:hover {
+	border: 1px solid #f54242;
+	color: #f54242;
+	background-color: #fff;
+}
+
+
+.button__form {
+	background-color: #c91212;
+	color: #fff;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+.button__form:hover {
+	color: #c91212;
+	background-color: #fff;
+}
+
+.button__comment {
+	background-color: #bfbfbf;
+	padding: 10px;
+	width: 24%;
+	border: 1px solid #c4c4c4;
+	border-radius: 20px;
+	color: #000;
+	font-size: 24px;
+	height: 75px;
+	max-height: 75px;
+}
+
+.button_search {
+	position: relative;
+	top: -5px;
+}
+
+.button_search img {
+	width: 100%;
+	height: 100%;
+	max-height: 30px;
+}
+
+.button_user {
+	background-color: #f2f2f2;
+	padding: 10px;
+	border: 1px solid #bfbfbf;
+	border-radius: 20px;
+	display: inline-block;
+	width: 300px;
+	color: #666666;
+}
+
+.button_user:hover {
+	color: #333333;
+}
+
+
+/* ------------------------------------------------------------ *\
+	Hidden
+\* ------------------------------------------------------------ */
+
+.hidden {
+	display: none;
+}
+
+
+/* ------------------------------------------------------------ *\
+	Clear Fix
+\* ------------------------------------------------------------ */
+
+.clear--fix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* ------------------------------------------------------------ *\
+	Separator
+\* ------------------------------------------------------------ */
+
+.has--separator::after {
+	content: '';
+	display: inline-block;
+	width: 300px;
+	height: 1px;
+	background-color: #ba8f00;
+	margin-bottom: 10px;
+}

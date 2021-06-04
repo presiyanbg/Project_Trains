@@ -23,16 +23,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c68595a-cc6e-4dba-9096-e357764ce809" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/html/routeUpdate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/html/stationUpdate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/html/stationView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/html/updateUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/html/userPage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/site/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/StationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/StationsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/TicketsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/TicketsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/Pager.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Pager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/MovieModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositories/MoviesRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/html/movieCreate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/html/movieList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/html/movieUpdate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/html/movieView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/movies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/StationsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/StationsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/StationsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/StationsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/html/routeCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/html/routeCreate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/html/routeList.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/html/routeList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/html/stationCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/html/stationCreate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/html/stationList.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/html/stationList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/site/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/stations.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/stations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/tickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/tickets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +59,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +87,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../example-project" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -94,7 +120,17 @@
       <workItem from="1619296736971" duration="6117000" />
       <workItem from="1619376592829" duration="10214000" />
       <workItem from="1619556529686" duration="12827000" />
-      <workItem from="1619591380232" duration="72000" />
+      <workItem from="1619591380232" duration="427000" />
+      <workItem from="1619721311781" duration="92000" />
+      <workItem from="1620072347230" duration="20954000" />
+      <workItem from="1620241919168" duration="7501000" />
+      <workItem from="1620665298470" duration="1643000" />
+      <workItem from="1620672106210" duration="13000" />
+      <workItem from="1620966441212" duration="1417000" />
+      <workItem from="1621193592156" duration="5000" />
+      <workItem from="1622662525042" duration="8056000" />
+      <workItem from="1622834981320" duration="145000" />
+      <workItem from="1622836077191" duration="982000" />
     </task>
     <task id="LOCAL-00001" summary="show basic php">
       <created>1612808707239</created>

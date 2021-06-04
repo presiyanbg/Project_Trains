@@ -1,29 +1,40 @@
 <?php
 
 echo "
-<form action='" . APPLICATION_PATH . "index.php?controller=stations&action=CreateNewRoute' method='post' enctype='multipart/form-data'>
-    <label>From Station</label>
-    <select name='from_station' id='from_station'></select>
-    <input type='text' name='from_station_id' id='from_station_id' hidden>
-    
-    <label>To Station</label>
-    <select name='to_station' id='to_station'></select>
-    <input type='text' name='to_station_id' id='to_station_id' hidden>
-    
-    <label>Travel Time (minutes)</label>
-    <input type='text' name='time_minutes'><br>
-    
-    <label>Price 1st Class</label>
-    <input type='text' name='price_f_class'><br>
-    
-    <label>Price 2st Class</label>
-    <input type='text' name='price_s_class'><br>
-    
-    <label>Time Of Travel</label>
-    <input type='time' name='time_of_travel'><br>
-
-    <button name='create' value='true'>Create</button>
-</form>
+<div class='shell'>
+    <div class='section'>   
+    <div class='basic__form'>
+        <form action='" . APPLICATION_PATH . "index.php?controller=stations&action=CreateNewRoute' method='post' enctype='multipart/form-data'>
+            <div class='basic__form--action'>
+                <label>From Station</label>
+                <select name='from_station' id='from_station'></select>
+                <input type='text' name='from_station_id' id='from_station_id' hidden>
+                <br>
+                
+                <label>To Station</label>
+                <select name='to_station' id='to_station'></select>
+                <input type='text' name='to_station_id' id='to_station_id' hidden>
+                <br>
+                
+                <label>Travel Time (minutes)</label>
+                <input type='text' name='time_minutes'><br>
+                
+                <label>Price 1st Class</label>
+                <input type='text' name='price_f_class'><br>
+                
+                <label>Price 2st Class</label>
+                <input type='text' name='price_s_class'><br>
+                
+                <label>Time Of Travel</label>
+                <input type='time' name='time_of_travel'><br>
+            
+                <button name='create' class='button button__red' value='true'>Create</button>
+            </div>
+        </form>
+     </div>
+   </div>
+</div>
+        
 ";
 
 echo "

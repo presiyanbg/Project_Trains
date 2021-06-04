@@ -40,16 +40,70 @@ class StationsController extends BaseController
         }
     }
 
-    function view() {
-        Debug::parseAndDie($_POST);
+    function viewStation() {
+        return $this->stationsModel->viewStation($_POST['station_id']);
     }
 
-    function viewRoute() {
-        Debug::parseAndDie($_POST);
+    function userViewStation( ) {
+        $station_info = $this->stationsModel->viewStation($_GET['station_id']);
+        $station_comments = $this->stationsModel->viewStationComments($_GET['station_id']);
+
+        return array($station_info, $station_comments);
+    }
+
+    function comment() {
+        $this->stationsModel->createComment($_POST);
+
+        header("Location: index.php?controller=stations&action=userViewStation&station_id=". $_POST['station_id']);
+    }
+
+    function updateStation() {
+        if (!empty($_POST) && !empty($_POST["update"])) {
+            if (empty($_FILES["file_to_upload"]["error"])) {
+                $file_name = $this->uploadManager->uploadImg(); // 12321321_duck.jpg | false
+                if (!$file_name) {
+                    return false;
+                } else {
+                    $_POST["picture"] = $file_name;
+                }
+            }
+
+            $this->stationsModel->update($_POST);
+
+            header("Location: index.php?controller=stations&action=listAll");
+        } else {
+            return true;
+        }
+    }
+
+    public function updateRoute() {
+        if (!empty($_POST) && !empty($_POST["update"])) {
+            $this->stationsModel->updateRoute($_POST);
+
+            header("Location: index.php?controller=stations&action=SeeAllRoutes");
+        } else {
+            return true;
+        }
+    }
+
+    public function viewRoute() {
+        return array($this->stationsModel->viewRoute($_POST['route_id']), $this->listAll());
     }
 
     public function listAll() {
-        return $this->stationsModel->listAll();
+        if (!empty($_POST) && !empty($_POST["stationSearch"])) {
+            if($_POST["stationSearch"]) {
+                $searchResult = $this->stationsModel->searchStation($_POST["stationSearch"]);
+
+                if ($searchResult == "") {
+                    return $this->stationsModel->listAll();
+                } else {
+                    return $this->stationsModel->searchStation($_POST["stationSearch"]);
+                }
+            }
+        } else {
+            return $this->stationsModel->listAll();
+        }
     }
 
     public function SeeAllRoutes() {

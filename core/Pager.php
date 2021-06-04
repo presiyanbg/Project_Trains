@@ -18,6 +18,9 @@ class Pager
                     case "stations":
                         $controller = new StationsController();
                         break;
+                    case "user":
+                        $controller = new UserController();
+                        break;
                     default:
                         $page = "404";
                         break;

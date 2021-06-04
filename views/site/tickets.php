@@ -3,47 +3,120 @@ require_once "navigation.php";
 
 if (!empty($_SESSION["uprivilege"])) {
     echo "
-        <form action='" . APPLICATION_PATH . "index.php?controller=tickets&action=create' method='post' enctype='multipart/form-data'>          
-            <label>From</label>
-            <select name='route_from' id='route_from'></select>
-            <br>
+    <div class='shell'>
+        <div class='section section__main'>
+            <div class='section__title'>
+                <h1> Buy a Ticked</h1>
+            </div>
             
-            <label>To</label>
-            <select name='route_to' id='route_to'></select>
-            <br>
-            
-            <label>Time of travel</label>
-            <select name='time_of_travel' id='time_of_travel'></select>
-            <br>
-            
-            <label>Price 1st class</label>
-            <span id='price_1st_class'></span>
-            <br>
-            
-            <label>Price 2st class</label>
-            <span id='price_2nd_class'></span>
-            <br>
-            
-            <span id='time_minutes'></span>
-            <br>
-            
-            <label>Passengers 1st Class </label>
-            <input name='passengers_1st' id='passengers_1st' type='number' min='0' value='1'>
-            <br>
-            
-            <label>Passengers 2st Class </label>
-            <input name='passengers_2nd' id='passengers_2nd' type='number' min='0' value='0'>
-            <br>
-            
-            <label>Final Price</label>
-            <span name='final_price' id='final_price'></span>
-            <br>
-            
-            <input type='text' hidden name='user_id' id='user_id'></input>
-            <input type='text' hidden name='route_id' id='route_id'></input>
-            
-            <input type='submit' id='submit' value='BUY THE GOD DAMN TICKET NOWWWW!!!!'>            
-        </form>
+            <div class='section__content'>  
+                <div class='form'>
+                    <form action='" . APPLICATION_PATH . "index.php?controller=tickets&action=create' method='post' enctype='multipart/form-data'>          
+                        <div class='form__body'>
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label class='form__label'>From</label>
+                                 </div>
+                                 
+                                 <div class='form__col'>
+                                    <select name='route_from' id='route_from'></select>
+                                 </div> 
+                            </div>
+                        
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label class='form__label'>To</label>
+                                </div>
+                                
+                                <div class='form__col'>
+                                    <select name='route_to' id='route_to'></select>
+                                </div>
+                            </div>
+                        
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label class='form__label'>Time of travel</label>
+                                </div>
+                                
+                                <div class='form__col'>
+                                    <select name='time_of_travel' id='time_of_travel'></select>
+                                </div>
+                             </div>
+                        
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label>Price 1st class</label>
+                                </div>
+                                        
+                                <div class='form__col form__option'>    
+                                    <span id='price_1st_class'></span>
+                                </div>    
+                            </div>
+                        
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label>Price 2st class</label>
+                                </div>
+                                    
+                                <div class='form__col form__option'>     
+                                    <span id='price_2nd_class'></span>
+                                </div>
+                            </div>
+                    
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label>Тravel duration</label>
+                                </div>
+                                
+                                <div class='form__col form__option'>
+                                    <span id='time_minutes'></span>
+                                </div>
+                            </div>
+                        
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label>Passengers 1st Class </label>
+                                </div>
+                                    
+                                <div class='form__col'>    
+                                    <input name='passengers_1st' id='passengers_1st' type='number' min='0' value='1'>
+                                </div>
+                            </div>
+                    
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label>Passengers 2st Class </label>
+                                </div>
+                                    
+                                <div class='form__col'>    
+                                    <input name='passengers_2nd' id='passengers_2nd' type='number' min='0' value='0'>
+                                </div>
+                            </div>        
+                        
+                            <div class='form__row'>
+                                <div class='form__col'>
+                                    <label>Final Price</label>
+                                </div>
+                                
+                                <div class='form__col form__option'> 
+                                    <span name='final_price' id='final_price'></span>
+                                </div>
+                            </div>
+                        
+                            <div class='hidden'>
+                                <input type='text' hidden name='user_id' id='user_id'>
+                                <input type='text' hidden name='route_id' id='route_id'>
+                            </div>
+                        </div>  
+
+                        <div class='form__actions'>
+                                <input type='submit' class='button button__red'  id='submit' value='buy'> 
+                        </div>                 
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
         ";
 
     echo "
@@ -175,13 +248,26 @@ if (!empty($_SESSION["uprivilege"])) {
         </script>        
     ";
 } else {
-        echo "<li>
+        echo "
+    <div class='shell'>
+        <div class='section section__main'>
+            <div class='section__title'>
+                <h3> Buy a Ticked</h3>
+            </div>
+            
+            <div class='section__content'>
+                <div class='basic__form'>
                     <form action='" . APPLICATION_PATH . "index.php?login=true' method='post'>
-                        <input type='submit' value='";
+                        <div class='basic__from--action'>
+                            <input class='button button__red' type='submit' value='";
                             echo (!empty($_SESSION["uid"])) ? "Logout" : "Login Or Register here";
                             echo "'>
-                            </form>
-                        </li>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
         ";
 }
 

@@ -16,7 +16,15 @@ class UserModel extends BaseModel
 
     public function view($id)
     {
-        // TODO: Implement view() method.
+        return $this->userRepository->getUserInfo($id);
+    }
+
+    public function viewUserComments($id) {
+        return $this->userRepository->getUserComments($id);
+    }
+
+    public function viewUserTickets($id) {
+        return $this->userRepository->getUserTickets($id);
     }
 
     public function viewByUsernameAndPassword($username, $password) {
@@ -30,7 +38,7 @@ class UserModel extends BaseModel
 
     public function update($data)
     {
-        // TODO: Implement update() method.
+        $this->userRepository->updateUser($data);
     }
 
     public function delete($id)
